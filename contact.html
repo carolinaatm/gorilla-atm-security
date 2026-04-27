@@ -75,7 +75,7 @@ document.getElementById('sf-description').value = parts.join('\n');
 /* Lazy-load reCAPTCHA on first user interaction */
 (function(){var loaded=false;function loadRC(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='https://www.google.com/recaptcha/api.js';s.async=true;s.defer=true;document.body.appendChild(s);}
 var fields=document.querySelectorAll('form input,form select,form textarea');fields.forEach(function(f){f.addEventListener('focus',loadRC,{once:true,passive:true});});
-['scroll','click','touchstart','keydown'].forEach(function(e){document.addEventListener(e,loadRC,{once:true,passive:true});});
+
 })();
 </script> <!-- Google Tag Manager (deferred) -->
 <script>window.addEventListener('load',function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPDMG79V');},{once:true});</script>
