@@ -1,0 +1,5 @@
+# Gorilla ATM Security — Netlify Redirects
+/about/                 /about.html             301
+/faq/                   /faq.html               301
+/atm-enclosures/        /enclosures/            301
+/atm-enclosures         /enclosures/            301

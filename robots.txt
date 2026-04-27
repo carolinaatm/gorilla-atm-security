@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gorillaatmsecurity.com/sitemap.xml
+
+# Block utility files
+Disallow: /submit.php
