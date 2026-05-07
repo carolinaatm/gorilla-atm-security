@@ -4,4 +4,4 @@ const faqItems=document.querySelectorAll('.faq-item');faqItems.forEach(item=>{co
 function animateCount(el,target,suffix='',duration=2000){let start=0;const step=target/(duration/16);const timer=setInterval(()=>{start+=step;if(start>=target){start=target;clearInterval(timer);}
 el.textContent=Math.floor(start).toLocaleString()+suffix;},16);}
 const counters=document.querySelectorAll('[data-count]');if(counters.length){const countObserver=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting&&!entry.target.dataset.counted){entry.target.dataset.counted=true;const target=parseInt(entry.target.dataset.count);const suffix=entry.target.dataset.suffix||'';animateCount(entry.target,target,suffix);}});},{threshold:0.5});counters.forEach(el=>countObserver.observe(el));}
-const currentPath=window.location.pathname.split('/').pop
+const currentPath=window.location.pathname.split('/').pop()||'index.html';document.querySelectorAll('nav a[href]').forEach(a=>{if(a.getAttribute('href')===currentPath)a.classList.add('active');});});
