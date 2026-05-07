@@ -3,3 +3,8 @@
 /faq/                   /faq.html               301
 /atm-enclosures/        /enclosures/            301
 /atm-enclosures         /enclosures/            301
+
+# Fix GSC 404s — WordPress migration cleanup
+/privacy-policy/          /privacy.html             301
+/wp-login.php             /                         301
+/wp-content/*             /                         301
